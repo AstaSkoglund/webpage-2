@@ -24,3 +24,17 @@ function checkNumber(){
 
 
 }
+
+const digitBox = document.getElementById("digit");
+const multiplyBox = document.getElementById("multiply");
+
+digitBox.addEventListener("change", checkDigit);
+
+function checkDigit() {
+    const guess = digitBox.value;
+    const newDigit = guess*guess;
+    multiplyBox.innerText=newDigit
+
+
+
+}
